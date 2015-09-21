@@ -1,0 +1,5 @@
+
+
+dependencies {
+    compile 'org.springframework.hateoas:spring-hateoas:0.15.0.RELEASE'
+}
