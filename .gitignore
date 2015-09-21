@@ -1,0 +1,16 @@
+.*
+!.gitignore
+*.class
+*.war
+bin/
+target/
+target/*
+build/*
+build/
+/build
+.idea/*
+gradle.properties
+*.ipr
+*.iml
+*.log
+*.lck
