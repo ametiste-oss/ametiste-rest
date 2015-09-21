@@ -1,0 +1,7 @@
+
+
+dependencies {
+
+    compile project(":ametiste-rest-client")
+    compile 'org.springframework.hateoas:spring-hateoas:0.15.0.RELEASE'
+}

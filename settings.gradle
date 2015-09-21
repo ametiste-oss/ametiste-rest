@@ -1,2 +1,4 @@
 rootProject.name = 'ametiste-rest'
 
+include 'ametiste-rest-client'
+include 'ametiste-rest-client-leap'
