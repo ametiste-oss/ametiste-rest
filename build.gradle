@@ -2,8 +2,9 @@ subprojects {
 
     apply plugin: 'maven'
     apply plugin: 'java'
+    apply plugin: 'maven-publish'
 
-    group = 'org.ametiste'
+    group = 'org.ametiste.rest'
 
     version = '0.0.1-RELEASE'
 
@@ -12,10 +13,24 @@ subprojects {
         junitVersion = '4.11'
         mockitoVersion = '1.9.5'
         sl4jVersion = '1.7.2'
+
+
+        bintray_repo = 'maven'
+        bintray_name = module.name
+        bintray_userOrg = 'ametiste-oss'
+        bintray_licenses = ['Apache-2.0']
+        bintray_vcsUrl = 'https://github.com/ametiste-oss/ametiste-rest.git'
+        bintray_publications = ['AmePublication']
+        bintray_version_name = project.version
+        bintray_version_desc = 'Ametiste REST client and utils'
+        bintray_version_released = new Date()
+        bintray_version_vcsTag = project.version
+
     }
 
     repositories {
         mavenCentral()
+        jcenter()
     }
 
     dependencies {
